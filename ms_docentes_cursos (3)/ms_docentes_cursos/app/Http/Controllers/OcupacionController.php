@@ -44,7 +44,7 @@ class OcupacionController extends Controller
     {
         $row = Ocupacion::find($id);
         if(empty($row)){
-            return new Response('Lo lamentamos, no encontramos este registro',404);
+            return new Response('Disculpe, no encontramos este registro',404);
         }
         return $row;
     }
@@ -60,7 +60,7 @@ class OcupacionController extends Controller
     {
         $row =Ocupacion::find($id);
         if(empty($row)){
-            return new Response('Lo lamentamos, no encontramos este registro',404);
+            return new Response('Disculpe, no encontramos este registro',404);
         }
         $input = $request->all();
         $row->id = $input['id'];
@@ -79,7 +79,7 @@ class OcupacionController extends Controller
     {
         $row =Ocupacion::find($id);
         if(empty($row)){
-            return new Response('disculpe, no encontramos este registro',404);
+            return new Response('Disculpe, no encontramos este registro',404);
         }
         $row->delete();
         return 'Se ha eliminado correctamente el registro';

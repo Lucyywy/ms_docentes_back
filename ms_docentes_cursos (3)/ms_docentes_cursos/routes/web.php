@@ -24,13 +24,11 @@ $router->post('docentes','DocenteController@store');
 $router->put('docentes/{cod}','DocenteController@update');
 $router->delete('docentes/{cod}','DocenteController@destroy');
 
-
 $router->get('cursos','CursoController@index');
 $router->get('cursos/{cod}','CursoController@show');
 $router->post('cursos','CursoController@store');
 $router->put('cursos/{cod}','CursoController@update');
 $router->delete('cursos/{cod}','CursoController@destroy');
-
 
 $router->get('ocupaciones','OcupacionController@index');
 $router->get('ocupaciones/{id}','OcupacionController@show');

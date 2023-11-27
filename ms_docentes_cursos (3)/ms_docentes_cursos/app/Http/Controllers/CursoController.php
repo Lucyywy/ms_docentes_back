@@ -44,7 +44,7 @@ class CursoController extends Controller
     {
         $row =Curso::find($cod);
         if(empty($row)){
-            return new Response('Lo lamentamos, no encontramos este registro',404);
+            return new Response('Didculpe, no encontramos este registro',404);
         }
         return $row;
     }
@@ -60,7 +60,7 @@ class CursoController extends Controller
     {
         $row =curso::find($cod);
         if(empty($row)){
-            return new Response('Lo lamentamos, no encontramos este registro',404);
+            return new Response('Disculpe, no encontramos este registro',404);
         }
         $input = $request->all();
         $row->cod = $input['cod'];
@@ -80,7 +80,7 @@ class CursoController extends Controller
     {
         $row =Curso::find($cod);
         if(empty($row)){
-            return new Response('disculpe,no encontramos este registro',404);
+            return new Response('Disculpe,no encontramos este registro',404);
         }
         $row->delete();
         return 'Se ha eliminado correctamente el registro :)';
